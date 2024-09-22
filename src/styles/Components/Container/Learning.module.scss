@@ -1,0 +1,277 @@
+@import '../../variables.scss';
+
+.LearningPage {
+  .LearningTitle {
+    text-align: center;
+    padding-top: 80px;
+    h1 {
+      color: #0055D5;
+      display: inline-block;
+      font-size: 83px;
+      font-family: 'ariston_comic_demoregular';
+      font-weight: 400;
+      position: relative;
+      letter-spacing: 3px;
+      -webkit-text-stroke: 4px #fff;
+      background: -webkit-linear-gradient(top, #0055d5 0%, #0055d5 58%, #0055d5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+  .FeedbackWrap {
+    padding: 135px 0;
+    .LearningHindiLang {
+      position: relative;
+      .leftTenBoy {
+          position: absolute;
+          left: 0;
+          top: -130px;
+      }
+    }
+    .CenterGirl {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      transform: translate(-50%, 0);
+    }
+    .RightBallBoy{
+      position: absolute;
+      right: 0px;
+      top: -75px;
+      z-index: -1;
+    }
+  }
+  .LearningWrap {
+    background-color: #043A8B;
+    border-radius: 68px;
+    margin-top: 15px;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    .AccordionRow {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      .AccordionBox {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-bottom: 25px;
+        .learningBox {
+          border-radius: 16px;
+          border: 2px solid white;
+          background-color: #fff;
+          padding: 1rem!important;
+          display: flex;
+          align-items: center;
+          transition: all 0.5s;
+          cursor:pointer;
+          h4 {
+            font-family: 'ams_barakhadi_1regular';
+            font-size: 41px;
+            font-weight: 400;
+            text-shadow: 3.81px 5.81px 0px #00000024;
+            letter-spacing: 0px;
+            transition: all 0.5s;
+            padding-left: 10px;
+          }
+          &:hover {
+            background: #043a8b;
+            transition: all 0.5s;
+            h4 {
+              color: #fff;
+              transition: all 0.5s;
+            }
+          }
+        }
+        
+        &:first-child h4{
+          color: #128539;
+        }
+        &:nth-child(2) h4{
+          color: #C73818;
+        }
+      }
+      .WordBox {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-bottom: 25px;
+        .learningBox {
+          border-radius: 16px;
+          border: 2px solid white;
+          background-color: #fff;
+          padding: 1rem!important;
+          display: flex;
+          align-items: center;
+          transition: all 0.5s;
+          cursor:pointer;
+          h4 {
+            font-family: 'ams_barakhadi_1regular';
+            font-size: 41px;
+            font-weight: 400;
+            text-shadow: 3.81px 5.81px 0px #00000024;
+            letter-spacing: 0px;
+            transition: all 0.5s;
+            padding-left: 10px;
+          }
+          &:hover {
+            background: #043a8b;
+            transition: all 0.5s;
+            h4 {
+              color: #fff;
+              transition: all 0.5s;
+            }
+          }
+        }
+        &:first-child h4{
+          color: #4C1285;
+        }
+        &:nth-child(2) h4{
+          color: #195FB2;
+        }
+        &:nth-child(3) h4{
+          color: #9419B2;
+        }
+        &:nth-child(4) h4{
+          color: #19B24D;
+        }
+        &:nth-child(5) h4{
+          color: #838512;
+        }
+        &:nth-child(6) h4{
+          color: #591970;
+        }
+        &:nth-child(7) h4{
+          color: #C73818;
+        }
+        &:nth-child(8) h4{
+          color: #9F2567;
+        }
+        &:nth-child(9) h4{
+          color: #128569;
+        }
+        &:last-child h4{
+          color: #7F2B20;
+        }
+      }
+      .MatraBox {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-bottom: 25px;
+        .learningBox {
+          border-radius: 16px;
+          border: 2px solid white;
+          background-color: #fff;
+          padding: 1rem!important;
+          display: flex;
+          align-items: center;
+          transition: all 0.5s;
+          cursor:pointer; 
+          h4 {
+            font-family: 'ams_barakhadi_1regular';
+            font-size: 41px;
+            font-weight: 400;
+            text-shadow: 3.81px 5.81px 0px #00000024;
+            letter-spacing: 0px;
+            transition: all 0.5s;
+            padding-left: 10px;
+          }
+          &:hover {
+            background: #043a8b;
+            transition: all 0.5s;
+            h4 {
+              color: #fff;
+              transition: all 0.5s;
+            }
+          }
+        }
+        &:first-child h4{
+          color: #4C1285;
+        }
+        &:nth-child(2) h4{
+          color: #19A9B2;
+        }
+        &:nth-child(3) h4{
+          color: #C73818;
+        }
+      }
+      .SpecialBox {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-bottom: 25px;
+        .learningBox {
+          border-radius: 16px;
+          border: 2px solid white;
+          background-color: #fff;
+          padding: 1rem!important;
+          display: flex;
+          align-items: center;
+          transition: all 0.5s;
+          cursor:pointer; 
+          h4 {
+            font-family: 'ams_barakhadi_1regular';
+            font-size: 41px;
+            font-weight: 400;
+            text-shadow: 3.81px 5.81px 0px #00000024;
+            letter-spacing: 0px;
+            transition: all 0.5s;
+            padding-left: 10px;
+          }
+          &:hover {
+            background: #043a8b;
+            transition: all 0.5s;
+            h4 {
+              color: #fff;
+              transition: all 0.5s;
+            }
+          }
+        }
+        &:first-child h4{
+          color: #4C1285;
+        }
+        &:nth-child(2) h4{
+          color: #19A9B2;
+        }
+      }
+      .AdvancedBox {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-bottom: 25px;
+        .learningBox {
+          border-radius: 16px;
+          border: 2px solid white;
+          background-color: #fff;
+          padding: 1rem!important;
+          display: flex;
+          align-items: center;
+          transition: all 0.5s;
+          cursor:pointer;
+          h4 {
+            font-family: 'ams_barakhadi_1regular';
+            font-size: 41px;
+            font-weight: 400;
+            text-shadow: 3.81px 5.81px 0px #00000024;
+            letter-spacing: 0px;
+            transition: all 0.5s;
+            padding-left: 10px;
+          }
+          &:hover {
+            background: #043a8b;
+            transition: all 0.5s;
+            h4 {
+              color: #fff;
+              transition: all 0.5s;
+            }
+          }
+        }
+        &:first-child h4{
+          color: #4C1285;
+        }
+        &:nth-child(2) h4{
+          color: #9419B2;
+        }
+        
+      }
+    }
+  }
+}

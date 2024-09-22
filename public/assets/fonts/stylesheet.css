@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: 'itc_officina_sans_stdbook';
+    src: url('officinasansstd-book-webfont.woff2') format('woff2'),
+         url('officinasansstd-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ariston_comic_demoregular';
+    src: url('ariston_comic_font-webfont.woff2') format('woff2'),
+         url('ariston_comic_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'ams_barakhadi_1regular';
+    src: url('ams_barakhadi_1_regular-webfont.woff2') format('woff2'),
+         url('ams_barakhadi_1_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

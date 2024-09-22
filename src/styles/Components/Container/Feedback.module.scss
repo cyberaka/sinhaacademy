@@ -1,0 +1,176 @@
+@import '../../variables.scss';
+.FeedBackPage {
+    padding: 6rem 0 0;
+    .FeedbackCont {
+    text-align: center;
+      h1 {
+        font-weight: 400;
+        font-size: 60px;
+        font-family: 'ariston_comic_demoregular';
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem !important;
+        color: #fff;
+        text-align: center;
+      }
+      p {
+        font-weight: 700;
+        font-family: 'itc_officina_sans_stdbook';
+        font-size: 21px;
+        max-width: 750px;
+        margin: 0 auto;
+        color: #fff;
+      }
+    }
+}
+.FeedbackWrap {
+  padding: 135px 0;
+  .LearningHindiLang {
+    position: relative;
+    .leftTenBoy {
+        position: absolute;
+        left: 0;
+        top: -130px;
+    }
+  }
+  .CenterGirl {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+  .RightBallBoy{
+    position: absolute;
+    right: 0px;
+    top: -75px;
+    z-index: -1;
+  }
+}
+
+.FeedbackForm {
+  background-color: #043A8B;
+  border-radius: 68px;
+  margin-top: 15px;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  .FeedbackFormInner {
+    max-width: 675px;
+    margin: 0 auto;
+    h2 {
+      font-weight: 400;
+      font-size: 60px;
+      font-family: 'ariston_comic_demoregular';
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+    }
+    .formControl{
+      padding: 16px 10px;
+      border: 1px solid #3e67a5;
+      border-radius: 10px;
+      background-color: #1d4e97;
+      color: white;
+      transition: none;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-clip: padding-box;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      outline: 0;
+    }
+    .ratingStars {
+      padding: 16px 10px;
+      border: 1px solid #3e67a5;
+      border-radius: 10px;
+      background-color: #1d4e97;
+      color: white;
+      transition: none;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-clip: padding-box;
+      -moz-appearance: none;
+      appearance: none;
+      input {
+        display: none;
+      }
+      label {
+        width: 4vmin;
+        height: 4vmin;
+        background: #6183b6;
+        display: inline-flex;
+        cursor: pointer;
+        margin: 0.5vmin 0.65vmin;
+        transition: all 1s ease 0s;
+        clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'itc_officina_sans_stdbook';
+        letter-spacing: 1px;
+        margin-top: 0 !important;
+        margin-bottom: 0;
+      &::after {
+        width: 90%;
+        height: 90%;
+        content: "";
+        background: orange;
+        z-index: -1;
+        display: block;
+        margin-left: 5%;
+        margin-top: 5%;
+        clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+        background: linear-gradient(90deg, white, white 30% 50%, #6183b6 50%, 70%, #6183b6 100%);
+        background-size: 205% 100%;
+        background-position: 0 0;
+      }
+    }
+    }
+    textarea {
+      min-height: 120px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 20px;
+      font-family: 'itc_officina_sans_stdbook';
+      letter-spacing: 1px;
+      color: #fff;
+      margin-top: 1rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .FormCheck {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .FormCheckInline {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        input {
+          margin:0;
+        }
+        label {
+          margin:0 !important;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    .feedbackSubmit {
+      background-color: #F7BB01;
+      padding: 4px 40px 4px 40px;
+      border-radius: 68px;
+      color: #0E4597;
+      font-size: 34px;
+      font-weight: 400;
+      font-family: 'ariston_comic_demoregular';
+      border-color: #0E4597 !important;
+      border: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.LearningPage {
+  padding: 80px 0;
+
+  .baloonTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color:#fff
+    }
+  }
+  .baloonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    .SingleBaloon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex:0 0 12%;
+      max-width: 12%;
+      position: relative;
+
+      .BaloonImg {
+        img {
+          filter:invert(1) brightness(1000);
+        }
+      }
+      .SvarWrap {
+        h5 {
+          position: absolute;
+          top: 10px;
+          font-size: 32px;
+          font-weight: 600;
+          margin: 0;
+          width: 100%;
+          height: 115px;
+          z-index: 1111;
+          left: 0;
+          padding: 0;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .active {
+      display: none;
+    }
+  }
+}

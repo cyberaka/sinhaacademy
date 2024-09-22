@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+  // .Header {
+  //   background-color: $white;
+  //   border-bottom: 1px solid $Grey200;
+  // }
+  .Header {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    .MenuWrap {
+      justify-content: end;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 35px;
+      .NavLink {
+        color: #fff;
+        font-family: 'itc_officina_sans_stdbook';
+        font-size: 21px;
+        font-weight: 700;
+        padding-right: 1.3rem;
+      }
+    }
+    .SearchWrap {
+      position: relative;
+      input {
+        padding: 15px 32px 15px 55px;
+        color: #0E4597;
+        border-radius: 50px;
+        box-shadow: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        outline: 0 !important;
+      }
+      .SearchIc {
+        position: absolute;
+        left: 20px;
+        top: 13px;
+        display: inline-block;
+        background-color: transparent;
+        color: #0E4597;
+      }
+    }
+  }

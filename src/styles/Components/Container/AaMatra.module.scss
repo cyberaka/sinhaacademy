@@ -1,0 +1,76 @@
+@import '../../variables.scss';
+
+.LearningPage {
+  padding: 80px 0;
+
+  .baloonTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color:#fff
+    }
+  }
+  .baloonGroup1 {
+    display: flex;
+    flex-wrap: wrap;
+    .aaMatraWrap {
+      flex:0 0 75%;
+      display: flex;
+      .SingleBaloon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex:0 0 12%;
+        max-width: 12%;
+        position: relative;
+        .BaloonImg {
+          img {
+            filter:invert(1) brightness(1000);
+          }
+        }
+        .SvarWrap {
+          h5 {
+            position: absolute;
+            top: 0;
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 1111;
+            left: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .active {
+        display: none;
+      }
+    }
+    .aaMatraRightWrap {
+      flex: 0 0 25%;
+      padding-top: 30px;
+      .NameBg {
+        display: flex;
+        align-items: center;
+        h6 {
+          background-color: #fff;
+          padding: 10px 15px;
+          height: 100%;
+          margin-right: 10px;
+          margin-bottom: 0;
+          min-width: 100px;
+        }
+        .englishName {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

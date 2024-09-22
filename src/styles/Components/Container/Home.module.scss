@@ -1,0 +1,252 @@
+@import '../../variables.scss';
+.meetHindiContent {
+    margin-top: 160px;
+    padding-bottom: 143px;
+    .backClrF {
+      background-color: #B55AAC;
+      border-radius: 32%;
+      width: auto;
+      padding: 0px 70px;
+      display: inline-block;
+      border-top-left-radius: 91px;
+      border-top-right-radius: 91px;
+      border-bottom-left-radius: 91px;
+      border-bottom-right-radius: 91px;
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .backClrS {
+        background-color: #74D1DD;
+        width: auto;
+        padding: 0px 90px;
+        display: inline-block;
+        border-top-left-radius: 91px;
+        border-top-right-radius: 91px;
+        border-bottom-left-radius: 91px;
+        border-bottom-right-radius: 91px;
+        height: 320px;
+        .BgCls {
+          width: 900px;
+          margin: -60px auto;
+          padding: 60px 40px;
+          border-radius: 90px;
+          background-size: cover;
+          background-image: url(../../../../public/assets/images/meet_hindi_banner.png);
+          background-color: #F9F242;
+          .txtOuter {
+            color: #0055D5;
+            display: inline-block;
+            font-size: 82px;
+            font-weight: 400;
+            position: relative;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 4px #fff;
+            background: -webkit-linear-gradient(top, #0055d5 0%, #0055d5 58%, #0055d5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 35px;
+            font-family: 'ariston_comic_demoregular';
+          }
+          p {
+            font-weight: 700;
+            font-size: 21px;
+            color: #0055D5;
+            font-family: 'itc_officina_sans_stdbook';
+          }
+        }
+      }
+    }
+}
+.FeedbackWrap {
+  padding: 135px 0;
+  .LearningHindiLang {
+    position: relative;
+    .leftTenBoy {
+        position: absolute;
+        left: 0;
+        top: -130px;
+    }
+  }
+  .CenterGirl {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+  .RightBallBoy{
+    position: absolute;
+    right: 0px;
+    top: -75px;
+    z-index: -1;
+  }
+}
+.WelcomeWrap {
+  background-size: cover;
+  background-image: url(../../../../public/assets/images/meet_hindi_banner.png);
+  background-color: #F9F242;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  background-position: bottom;
+  position: relative;
+  .WelCont {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    text-align: center;
+  h5 {
+    font-weight: 400;
+    font-size: 59px;
+    letter-spacing: 1px;
+    color: #D55900;
+    font-family: 'ariston_comic_demoregular';
+  }
+  h2 {
+    letter-spacing: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+    font-family: 'ariston_comic_demoregular';
+    -webkit-text-stroke-color: #fff;
+    text-shadow: 0 0 #D55900, 0 0 #D55900;
+    -webkit-text-stroke: 3px #fff;
+    font-weight: 400;
+    font-size: 83px;
+    color: #D55900 !important;
+  }
+  p {
+    max-width: 690px;
+    margin: 0 auto;
+    color: #D55900 !important;
+    font-weight: 700;
+    font-family: 'itc_officina_sans_stdbook';
+    font-size: 21px;
+  }
+}
+.FunEase {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+}
+.ourCurriculumContent {
+    position: relative;
+  .OurCurriculumLeft {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    z-index: -1;
+  }
+  .OurCurriculumRight {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    z-index: -1;
+  }
+  .OurCurriculumTitle {
+    padding: 120px 0;
+    text-align: center;
+    h2 {
+      color: #0055D5;
+      display: inline-block;
+      font-size: 83px;
+      font-family: 'ariston_comic_demoregular';
+      font-weight: 400;
+      position: relative;
+      letter-spacing: 3px;
+      -webkit-text-stroke: 4px #fff;
+      background: -webkit-linear-gradient(top, #0055d5 0%, #0055d5 58%, #0055d5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      width: 680px;
+      font-weight: 700;
+      font-family: 'itc_officina_sans_stdbook';
+      font-size: 21px;
+      padding-top: 1.5rem !important;
+      color: #fff;
+      margin: 0 auto;
+    }
+  }
+  .curriculumContent {
+    .ourCurriculumBox {
+      border-radius: 32px;
+      padding: 20px 15px;
+      text-align: center;
+      &:hover {
+        background: #FFFFFF0D;
+        transition: 1s all;
+      }
+    h5
+     {
+      font-weight: 700;
+      font-family: 'itc_officina_sans_stdbook';
+      font-size: 21px;
+      margin-top: 1rem !important;
+      color: #fff;
+    }
+  }
+  }
+}
+.whyChooseContent {
+  position: relative;
+  .whyChooseBtm {
+    position: absolute;
+    left: 30px;
+    bottom: -50px;
+    width: 200px;
+  }
+  .whyChooseCenter {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+  }
+  .ContainerWrap {
+    border-radius: 88px;
+    margin-top: -15px;
+    background-color: #F89015;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    .WhyChooseTitle {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+      text-align: center;
+      h2 {
+        color: #0055D5;
+        display: inline-block;
+        font-size: 83px;
+        font-family: 'ariston_comic_demoregular';
+        font-weight: 400;
+        position: relative;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 3px #fff;
+        background: -webkit-linear-gradient(top, #0055d5 0%, #0055d5 58%, #0055d5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: transparent !important;
+      }
+    }
+    .WhyChooseBox {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+      text-align: center;
+      .RowWrap {
+        justify-content: space-around;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 33px;
+        font-family: 'ariston_comic_demoregular';
+        letter-spacing: 1px;
+        color: #fff;
+      }
+      p {
+        font-weight: 700;
+        font-family: 'itc_officina_sans_stdbook';
+        font-size: 21px;
+        color: #fff;
+      }
+    }
+  }
+}

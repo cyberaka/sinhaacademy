@@ -1,0 +1,55 @@
+.coverElement {
+    position: relative;
+    background-image: url(/assets/DSCover.png);
+    width: 100%;
+    height: 89rem;
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+.quoteSize {
+    color: #fff;    
+    position: absolute;
+    left: 5%;
+}
+.quoteHeading {
+    @extend .quoteSize;
+    font-size: 4.5rem;
+    top: 50%;
+}
+.quoteTitle {
+    @extend .quoteSize;
+    font-size: 34px;
+    font-weight: bold;
+    top: 58%;
+    letter-spacing: 5px;
+}
+.quoteVersion {
+    @extend .quoteSize;
+    font-size: 24px;
+    top: 62%;
+}
+
+.quoteDescTable {
+    @extend .quoteSize;
+    top: 83%;
+    left: 19%;
+    .quoteDescription {
+        width: 24rem;
+    }
+    .preparedFor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.quoteFooter {
+    @extend .quoteSize;
+    color:#000;
+    bottom: 0;    
+    .quoteDisclaimer {
+        color: #5791aa; 
+        font-weight:bolder;
+    }
+}

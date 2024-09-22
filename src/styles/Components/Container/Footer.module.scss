@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+  // .Header {
+  //   background-color: $white;
+  //   border-bottom: 1px solid $Grey200;
+  // }
+  .Footer {
+    padding: 6rem 0;
+    text-align: center;
+    p {
+      font-weight: 700;
+      font-family: 'itc_officina_sans_stdbook';
+      font-size: 21px;
+      max-width: 620px;
+      margin: 25px auto;
+      color: #fff;
+    }
+    .FooterBtn {
+      padding: 12px 40px 12px 40px;
+      border-radius: 70px;
+      line-height: 1.5;
+      color: #0E4597;
+      font-size: 34px;
+      font-weight: 400;
+      font-family: "ariston_comic_demoregular";
+      border-color: #0E4597 !important;
+      border: 3px solid #0E4597;
+      background-color: #fff;
+      text-align: center;
+    }
+  }

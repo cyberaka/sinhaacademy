@@ -1,0 +1,17 @@
+.quoteHourBody {
+  position: relative;
+}
+.quoteHoursParentContainer {
+  position: relative;
+  .quoteHoursContainer {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    position: absolute;
+    z-index: 10;
+    left: -58rem;
+    top: 2rem;
+    .quoteTable {
+      min-width: 66rem;
+    }
+  }
+}
