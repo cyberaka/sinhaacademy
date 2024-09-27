@@ -21,8 +21,8 @@ import Matraein from '../Matraein/Index';
 import RMatra from '../RMatra/Index';
 import Sanyukt from '../Sanyukt/Index';
 import Svar from '../Svar/Index';
-import Wmatra from '../Wmatra/Index';
-import WUmatra from '../WUmatra/Index';
+import Umatra from '../Wmatra/Index';
+import UUmatra from '../WUmatra/Index';
 import Vyanjan from '../Vyanjan/Index';
 
 const RightBall = '/assets/images/right_ball_boy.png';
@@ -85,18 +85,18 @@ function Index() {
       modalTitle: 'EE Matra',
     });
   };
-  const openWmatraModal = () => {
+  const openUmatraModal = () => {
     dispatch({
-      viewWmatraModal: true,
+      viewUmatraModal: true,
       edit: false,
-      modalTitle: 'W Matra',
+      modalTitle: 'U Matra',
     });
   };
-  const openWUmatraModal = () => {
+  const openUUmatraModal = () => {
     dispatch({
-      viewWUmatraModal: true,
+      viewUUmatraModal: true,
       edit: false,
-      modalTitle: 'WU Matra',
+      modalTitle: 'UU Matra',
     });
   };
   const openRMatraModal = () => {
@@ -201,19 +201,18 @@ function Index() {
                     <Accordion.Header className="w-100 text-start pb-4 mb-5 accordion-header">Basic</Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.AccordionBox}>
-                        <div className={styles.learningBox}>
-                          <a href="/svar" >
-                            <img src={B1} alt="Svar" />
-                            <h4 className="mt-3">svar</h4>
-                          </a>
+                        <div className={styles.learningBox} onClick={() => openSwarModal()}>
+                          <img src={B1} alt="Svar" />
+
+                          <h4 className="mt-3">svar</h4>
                         </div>
                       </div>
                       <div className={styles.AccordionBox}>
-                        <div className={styles.learningBox}>
-                          <a href="/vyanjan">
+                        <div className={styles.learningBox} onClick={() => openVyanjanModal()}>
+                          <a href="#">
                             <img src={B2} alt="Vya/jana" />
-                            <h4 className="mt-3">vya/jana</h4>
                           </a>
+                          <h4 className="mt-3">vya/jana</h4>
                         </div>
                       </div>
                     </Accordion.Body>
@@ -226,67 +225,65 @@ function Index() {
                     <Accordion.Header className="w-100 text-start pb-4 mb-5 accordion-header">Words</Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox} >
-                          <a href="aamatra">
+                        <div className={styles.learningBox} onClick={() => openAaMatraModal()}>
+                          <a href="#">
                             <img src={W1} alt="Aa maaPaa" />
-                            <h4 className="mt-3">Aa maaPaa</h4>
                           </a>
+                          <h4 className="mt-3">Aa maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="ematra">
-                            <img src={W2} alt="q maaPaa" />
-                            <h4 className="mt-3">q maaPaa</h4>
-                          </a>
+                        <div className={styles.learningBox} onClick={() => openEmatraModal()}>
+                          <img src={W2} alt="q maaPaa" />
+
+                          <h4 className="mt-3">q maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="wumatra">
-                            <img src={W3} alt="w maaPaa" />
-                            <h4 className="mt-3">w maaPaa</h4>
-                          </a>
+                        <div className={styles.learningBox} onClick={() => openUmatraModal()}>
+                          <img src={W3} alt="w maaPaa" />
+
+                          <h4 className="mt-3">w maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="wumatra">
+                        <div className={styles.learningBox} onClick={() => openUUmatraModal()}>
+                          <a href="#">
                             <img src={W4} alt="wu maaPaa" />
-                            <h4 className="mt-3">wu maaPaa</h4>
                           </a>
+                          <h4 className="mt-3">wu maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="rmatra">
+                        <div className={styles.learningBox} onClick={() => openRMatraModal()}>
+                          <a href="#">
                             <img src={W5} alt="R maaPaa" />
-                            <h4 className="mt-3">R maaPaa</h4>
                           </a>
+                          <h4 className="mt-3">R maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="fmatra">
+                        <div className={styles.learningBox} onClick={() => openFMatraModal()}>
+                          <a href="#">
                             <img src={W6} alt="F maaPaa" />
+                          </a>
                           <h4 className="mt-3">F maaPaa</h4>
-                          </a>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="fematra">
+                        <div className={styles.learningBox} onClick={() => openFeMatraModal()}>
+                          <a href="#">
                             <img src={W7} alt="Fe maaPaa" />
-                          <h4 className="mt-3">Fe maaPaa</h4>
                           </a>
+                          <h4 className="mt-3">Fe maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox}>
-                          <a href="aaematra">
+                        <div className={styles.learningBox} onClick={() => openAaeMatraModal()}>
+                          <a href="#">
                             <img src={W8} alt="Aae maaPaa" />
-                          <h4 className="mt-3">Aae maaPaa</h4>
                           </a>
+                          <h4 className="mt-3">Aae maaPaa</h4>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
@@ -435,15 +432,15 @@ function Index() {
         show={state.viewUmatraModal}
         onClose={() => closeModal('viewUmatraModal')}
       >
-        <Wmatra />
+        <Umatra />
       </SimpleModal>
       <SimpleModal
-        id={'WUmatra' + '_modal'}
+        id={'UUmatra' + '_modal'}
         title={state?.modalTitle}
-        show={state.viewWUmatraModal}
-        onClose={() => closeModal('viewWUmatraModal')}
+        show={state.viewUUmatraModal}
+        onClose={() => closeModal('viewUUmatraModal')}
       >
-        <WUmatra />
+        <UUmatra />
       </SimpleModal>
       <SimpleModal
         id={'RMatra' + '_modal'}

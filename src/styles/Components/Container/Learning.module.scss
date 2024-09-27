@@ -62,10 +62,12 @@
           border: 2px solid white;
           background-color: #fff;
           padding: 1rem!important;
-          display: flex;
-          align-items: center;
           transition: all 0.5s;
           cursor:pointer;
+          a {
+            display: flex;
+            align-items: center;
+          }
           h4 {
             font-family: 'ams_barakhadi_1regular';
             font-size: 41px;
@@ -105,6 +107,10 @@
           align-items: center;
           transition: all 0.5s;
           cursor:pointer;
+          a {
+            display: flex;
+            align-items: center;
+          }
           h4 {
             font-family: 'ams_barakhadi_1regular';
             font-size: 41px;

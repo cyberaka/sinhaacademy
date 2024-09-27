@@ -4,6 +4,11 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import styles from '@/styles/Components/Container/Svar.module.scss';
+const RightBall = '/assets/images/right_ball_boy.png';
+const centerGirl = '/assets/images/center_girl.png';
+const leftTenBoy = '/assets/images/left_ten_boy.png';
+const leftIcon = '/assets/images/left_arrow.png';
+const rightIcon = '/assets/images/right_arrow.png';
 
 const initialSwaraMap = [
   { name: 'क', audioUrl: '/assets/mp3/barakhari/क.mp3', active: false },
@@ -371,11 +376,22 @@ function Index() {
 
   return (
     <div className={styles.LearningPage}>
-      <div className={styles.LearningWrap}>
         <Container>
           <div className={styles.baloonTitle}>
-            <h2>Barakhari - Pop all the 340 balloons! 🤪🎈🎊</h2>
+            <a href="mataraein"><img src={leftIcon} alt="Left Boy" /></a>
+            <h1>Barakhari</h1>
+            <a href="javascript:void(0)"><img src={rightIcon} alt="Left Boy" /></a>
           </div>
+        </Container>
+        <div className={styles.FeedbackWrap}>
+          <div className={styles.LearningHindiLang}>
+            <img src={leftTenBoy} alt="Left Boy" className={styles.leftTenBoy} />
+            <img src={centerGirl} alt="Center Girl" className={styles.CenterGirl} />
+            <img src={RightBall} alt="Right Boy" className={styles.RightBallBoy} />
+          </div>
+        </div>
+      <div className={styles.LearningWrap}>
+        <Container>
           <div className={styles.baloonGroup}>
             {swaraMap.map((item, index) => (
               <div

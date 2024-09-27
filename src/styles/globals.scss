@@ -1966,9 +1966,7 @@ input:-webkit-autofill:active {
 .modal-content {
   border: none;
 }
-.modal-content .active {
-  display: none !important;
-}
+
 .bdrNone {
   border: 0 !important;
 
@@ -2371,4 +2369,7 @@ body {
       width: 100%;
       left: 0;
   }
+}
+.active img {
+  filter: unset !important; 
 }

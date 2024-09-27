@@ -4,10 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { Inter } from 'next/font/google';
 import React from 'react';
 
-
 const inter = Inter({ subsets: ['latin'] });
-
-
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -22,7 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body className={inter.className} suppressHydrationWarning={true}>
-      {children}
+        {children}
       </body>
     </html>
   );

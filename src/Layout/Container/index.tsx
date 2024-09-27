@@ -5,8 +5,7 @@ import React from 'react';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 
-
-function Container({ children, header }:any) {
+function Container({ children, header }: any) {
   const [hydrated, setHydrated] = React.useState(false);
   React.useEffect(() => {
     setHydrated(true);
@@ -15,13 +14,11 @@ function Container({ children, header }:any) {
 
   return (
     <>
-    <Header />
-    {children}
-    <Footer />
-    
-  </>
+      <Header />
+      {children}
+      <Footer />
+    </>
   );
 }
-
 
 export default Container;

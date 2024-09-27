@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import React from 'react';
+
 import { SuspenseLoader } from '@/components/App/Loader';
 
 export const metadata: Metadata = {

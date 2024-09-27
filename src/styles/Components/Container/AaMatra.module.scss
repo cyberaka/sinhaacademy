@@ -1,22 +1,64 @@
 @import '../../variables.scss';
 
 .LearningPage {
-  padding: 80px 0;
-
   .baloonTitle {
     text-align: center;
-    margin-bottom: 50px;
-    h2 {
-      font-size: 36px;
-      font-weight: 600;
-      color:#fff
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    h1 {
+      color: #0055D5;
+      display: inline-block;
+      font-size: 82px;
+      font-family: 'ariston_comic_demoregular';
+      font-weight: 400;
+      position: relative;
+      letter-spacing: 3px;
+      -webkit-text-stroke: 4px #fff;
+      background: -webkit-linear-gradient(top, #0055d5 0%, #0055d5 58%, #0055d5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0 !important;
     }
   }
+  .FeedbackWrap {
+    padding: 135px 0;
+    .LearningHindiLang {
+      position: relative;
+      .leftTenBoy {
+          position: absolute;
+          left: 0;
+          top: -130px;
+      }
+    }
+    .CenterGirl {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      transform: translate(-50%, 0);
+    }
+    .RightBallBoy{
+      position: absolute;
+      right: 0px;
+      top: -75px;
+      z-index: -1;
+    }
+  }
+  .LearningWrap {
+    background-color: #043A8B;
+    border-radius: 68px;
+    margin-top: 15px;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   .baloonGroup1 {
     display: flex;
     flex-wrap: wrap;
     .aaMatraWrap {
-      flex:0 0 75%;
+      flex:0 0 70%;
+      max-width: 70%;
       display: flex;
       .SingleBaloon {
         display: flex;
@@ -33,7 +75,7 @@
         .SvarWrap {
           h5 {
             position: absolute;
-            top: 0;
+            top: 8px;
             font-size: 32px;
             font-weight: 600;
             margin: 0;
@@ -54,23 +96,40 @@
       }
     }
     .aaMatraRightWrap {
-      flex: 0 0 25%;
+      flex: 0 0 30%;
+      max-width: 30%;
       padding-top: 30px;
       .NameBg {
         display: flex;
         align-items: center;
         h6 {
+          font-size: 28px;
+          font-weight: 400;
+          border-radius: 10px;
+          font-family: 'ams_barakhadi_1regular';
+          padding: 20px 15px 4px 15px;
+          line-height: 49.16px;
+          color: #043A8B;
+          border: 2px solid #043A8B;
           background-color: #fff;
-          padding: 10px 15px;
-          height: 100%;
-          margin-right: 10px;
+          min-width: 130px;
+          text-align: center;
           margin-bottom: 0;
-          min-width: 100px;
+          margin-right: 10px;
         }
         .englishName {
+          font-size: 28px;
+          font-weight: 400;
+          border-radius: 10px;
+          font-family: 'itc_officina_sans_stdbook';
+          padding: 10px 15px 10px 15px;
+          line-height: 49.16px;
+          background-color: #D50066;
           color: #fff;
+          border: 2px solid #D50066;
         }
       }
     }
   }
+}
 }
