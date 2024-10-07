@@ -4,10 +4,13 @@
   .LearningTitle {
     text-align: center;
     padding-top: 80px;
+    @media (max-width: 1199.98px) {
+      padding-top: 45px;
+    }
     h1 {
       color: #0055D5;
       display: inline-block;
-      font-size: 83px;
+      font-size: 82px;
       font-family: 'ariston_comic_demoregular';
       font-weight: 400;
       position: relative;
@@ -17,6 +20,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 1.5rem !important;
+      @media (max-width: 1199.98px) {
+        font-size: 48px;
+       
+      }
     }
   }
   .FeedbackWrap {
@@ -173,6 +180,10 @@
           align-items: center;
           transition: all 0.5s;
           cursor:pointer; 
+          a {
+            display: flex;
+            align-items: center;
+          }
           h4 {
             font-family: 'ams_barakhadi_1regular';
             font-size: 41px;
@@ -213,7 +224,11 @@
           display: flex;
           align-items: center;
           transition: all 0.5s;
-          cursor:pointer; 
+          cursor:pointer;
+          a {
+            display: flex;
+            align-items: center;
+          } 
           h4 {
             font-family: 'ams_barakhadi_1regular';
             font-size: 41px;
@@ -252,6 +267,10 @@
           align-items: center;
           transition: all 0.5s;
           cursor:pointer;
+          a {
+            display: flex;
+            align-items: center;
+          }
           h4 {
             font-family: 'ams_barakhadi_1regular';
             font-size: 41px;

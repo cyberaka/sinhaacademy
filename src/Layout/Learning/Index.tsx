@@ -2,28 +2,8 @@
 
 import React from 'react';
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
-
-import { useCommonReducer } from '@/components/App/reducer';
-import SimpleModal from '@/components/Default/SimpleModal';
 import styles from '@/styles/Components/Container/Learning.module.scss';
 
-import AaeMatra from '../AaeMatra/Index';
-import AaMatra from '../AaMatra/Index';
-import AEMatra from '../AEMatra/Index';
-import Anaunaaisak from '../Anaunaaisak/Index';
-import Anausvaar from '../Anausvaar/Index';
-import Barakhari from '../Barakhari/Index';
-import EEmatra from '../EEmatra/Index';
-import Ematra from '../Ematra/Index';
-import FeMatra from '../FeMatra/Index';
-import FMatra from '../FMatra/Index';
-import Matraein from '../Matraein/Index';
-import RMatra from '../RMatra/Index';
-import Sanyukt from '../Sanyukt/Index';
-import Svar from '../Svar/Index';
-import Wmatra from '../Wmatra/Index';
-import WUmatra from '../WUmatra/Index';
-import Vyanjan from '../Vyanjan/Index';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
@@ -48,133 +28,7 @@ const S2 = '/assets/images/s_2.png';
 const A1 = '/assets/images/a_1.png';
 const A2 = '/assets/images/a_2.png';
 function Index() {
-  const { state, dispatch } = useCommonReducer({});
-
-  const openSwarModal = () => {
-    dispatch({
-      viewModal: true,
-      edit: false,
-      modalTitle: 'Swar',
-    });
-  };
-  const openVyanjanModal = () => {
-    dispatch({
-      viewVyanjanModal: true,
-      edit: false,
-      modalTitle: 'Vyajana',
-    });
-  };
-  const openAaMatraModal = () => {
-    dispatch({
-      viewAaMatraModal: true,
-      edit: false,
-      modalTitle: 'Aa Matra',
-    });
-  };
-  const openEmatraModal = () => {
-    dispatch({
-      viewEmatraModal: true,
-      edit: false,
-      modalTitle: 'E Matra',
-    });
-  };
-  const openEEmatraModal = () => {
-    dispatch({
-      viewEEmatraModal: true,
-      edit: false,
-      modalTitle: 'EE Matra',
-    });
-  };
-  const openWmatraModal = () => {
-    dispatch({
-      viewWmatraModal: true,
-      edit: false,
-      modalTitle: 'W Matra',
-    });
-  };
-  const openWUmatraModal = () => {
-    dispatch({
-      viewWUmatraModal: true,
-      edit: false,
-      modalTitle: 'WU Matra',
-    });
-  };
-  const openRMatraModal = () => {
-    dispatch({
-      viewRMatraModal: true,
-      edit: false,
-      modalTitle: 'R Matra',
-    });
-  };
-  const openFMatraModal = () => {
-    dispatch({
-      viewFMatraModal: true,
-      edit: false,
-      modalTitle: 'F Matra',
-    });
-  };
-  const openFeMatraModal = () => {
-    dispatch({
-      viewFeMatraModal: true,
-      edit: false,
-      modalTitle: 'Fe Matra',
-    });
-  };
-  const openAaeMatraModal = () => {
-    dispatch({
-      viewAaeMatraModal: true,
-      edit: false,
-      modalTitle: 'Aae Matra',
-    });
-  };
-  const openAEMatraModal = () => {
-    dispatch({
-      viewAEMatraModal: true,
-      edit: false,
-      modalTitle: 'AeE Matra',
-    });
-  };
-  const openAnausvaarModal = () => {
-    dispatch({
-      viewAnausvaarModal: true,
-      edit: false,
-      modalTitle: 'Anausvaar',
-    });
-  };
-  const openAnaunaaisakModal = () => {
-    dispatch({
-      viewAnaunaaisakModal: true,
-      edit: false,
-      modalTitle: 'Anaunaaisak',
-    });
-  };
-  const openSanyuktModal = () => {
-    dispatch({
-      viewSanyuktModal: true,
-      edit: false,
-      modalTitle: 'Sanyukt',
-    });
-  };
-  const openBarakhariModal = () => {
-    dispatch({
-      viewBarakhariModal: true,
-      edit: false,
-      modalTitle: 'Barakhari',
-    });
-  };
-  const openMatraeinModal = () => {
-    dispatch({
-      viewMatraeinModal: true,
-      edit: false,
-      modalTitle: 'Matraein',
-    });
-  };
-
-  const closeModal = (key: string) => {
-    dispatch({ [key]: false, modalTitle: '' });
-  };
-
-  console.log(state.viewModal);
+  
   return (
     <>
       <div className={styles.LearningPage}>
@@ -202,7 +56,7 @@ function Index() {
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.AccordionBox}>
                         <div className={styles.learningBox}>
-                          <a href="/svar" >
+                          <a href="svar" >
                             <img src={B1} alt="Svar" />
                             <h4 className="mt-3">svar</h4>
                           </a>
@@ -210,7 +64,7 @@ function Index() {
                       </div>
                       <div className={styles.AccordionBox}>
                         <div className={styles.learningBox}>
-                          <a href="/vyanjan">
+                          <a href="vyanjan">
                             <img src={B2} alt="Vya/jana" />
                             <h4 className="mt-3">vya/jana</h4>
                           </a>
@@ -243,7 +97,7 @@ function Index() {
                       </div>
                       <div className={styles.WordBox}>
                         <div className={styles.learningBox}>
-                          <a href="wumatra">
+                          <a href="wmatra">
                             <img src={W3} alt="w maaPaa" />
                             <h4 className="mt-3">w maaPaa</h4>
                           </a>
@@ -290,17 +144,19 @@ function Index() {
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox} onClick={() => openAEMatraModal()}>
-                          <a href="#">
+                        <div className={styles.learningBox}>
+                          <a href="aematra">
                             <img src={W9} alt="AaE maaPaa" />
-                          </a>
                           <h4 className="mt-3">AaE maaPaa</h4>
+                          </a>
                         </div>
                       </div>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox} onClick={() => openEEmatraModal()}>
-                          <img src={W10} alt="qQ maaPaa" />
-                          <h4 className="mt-3">qQ maaPaa</h4>
+                        <div className={styles.learningBox}>
+                          <a href="eematra">
+                            <img src={W10} alt="qQ maaPaa" />
+                            <h4 className="mt-3">qQ maaPaa</h4>
+                          </a>
                         </div>
                       </div>
                     </Accordion.Body>
@@ -313,21 +169,27 @@ function Index() {
                     <Accordion.Header className="w-100 text-start pb-4 mb-5 accordion-header">Matra</Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.MatraBox}>
-                        <div className={styles.learningBox} onClick={() => openAnausvaarModal()}>
-                          <img src={M1} alt="Anausvaar" />
-                          <h4 className="mt-3">Anausvaar</h4>
-                        </div>
-                      </div>
-                      <div className={styles.MatraBox}>
-                        <div className={styles.learningBox} onClick={() => openAnaunaaisakModal()}>
-                          <img src={M2} alt="Anaunaaisak" />
-                          <h4 className="mt-3">Anaunaaisak</h4>
+                        <div className={styles.learningBox}>
+                          <a href="anausvaar">
+                            <img src={M1} alt="Anausvaar" />
+                            <h4 className="mt-3">Anausvaar</h4>
+                          </a>
                         </div>
                       </div>
                       <div className={styles.MatraBox}>
                         <div className={styles.learningBox}>
-                          <img src={M3} alt="Anausvaar" />
-                          <h4 className="mt-3">Anausvaar</h4>
+                          <a href="anaunaaisak">
+                            <img src={M2} alt="Anaunaaisak" />
+                            <h4 className="mt-3">Anaunaaisak</h4>
+                          </a>
+                        </div>
+                      </div>
+                      <div className={styles.MatraBox}>
+                        <div className={styles.learningBox}>
+                          <a href="anausvaar">
+                            <img src={M3} alt="Anausvaar" />
+                            <h4 className="mt-3">Anausvaar</h4>
+                          </a>
                         </div>
                       </div>
                     </Accordion.Body>
@@ -346,9 +208,11 @@ function Index() {
                     </Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.SpecialBox}>
-                        <div className={styles.learningBox} onClick={() => openSanyuktModal()}>
-                          <img src={S1} alt="Special" />
-                          <h4 className="mt-3">say/au|ta vya/jana</h4>
+                        <div className={styles.learningBox}>
+                          <a href="sanyukt">
+                            <img src={S1} alt="Special" />
+                            <h4 className="mt-3">say/au|ta vya/jana</h4>
+                          </a>
                         </div>
                       </div>
                       <div className={styles.SpecialBox}>
@@ -370,15 +234,19 @@ function Index() {
                     </Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.AdvancedBox}>
-                        <div className={styles.learningBox} onClick={() => openMatraeinModal()}>
-                          <img src={A1} alt="maaPaaF~" />
-                          <h4 className="mt-3">maaPaaF~</h4>
+                        <div className={styles.learningBox}>
+                          <a href="matraein">
+                            <img src={A1} alt="maaPaaF~" />
+                            <h4 className="mt-3">maaPaaF~</h4>
+                          </a>
                         </div>
                       </div>
                       <div className={styles.AdvancedBox}>
-                        <div className={styles.learningBox} onClick={() => openBarakhariModal()}>
-                          <img src={A2} alt="baarhKaDI" />
-                          <h4 className="mt-3">baarhKaDI</h4>
+                        <div className={styles.learningBox}>
+                          <a href="barakhari">
+                            <img src={A2} alt="baarhKaDI" />
+                            <h4 className="mt-3">baarhKaDI</h4>
+                          </a>
                         </div>
                       </div>
                     </Accordion.Body>
@@ -389,150 +257,6 @@ function Index() {
           </Container>
         </div>
       </div>
-      <SimpleModal
-        id={'Svar' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewModal}
-        onClose={() => closeModal('viewModal')}
-      >
-        <Svar />
-      </SimpleModal>
-      <SimpleModal
-        id={'Vyanjan' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewVyanjanModal}
-        onClose={() => closeModal('viewVyanjanModal')}
-      >
-        <Vyanjan />
-      </SimpleModal>
-      <SimpleModal
-        id={'AaMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAaMatraModal}
-        onClose={() => closeModal('viewAaMatraModal')}
-      >
-        <AaMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'Ematra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewEmatraModal}
-        onClose={() => closeModal('viewEmatraModal')}
-      >
-        <Ematra />
-      </SimpleModal>
-      <SimpleModal
-        id={'EEmatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewEEmatraModal}
-        onClose={() => closeModal('viewEEmatraModal')}
-      >
-        <EEmatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'Umatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewUmatraModal}
-        onClose={() => closeModal('viewUmatraModal')}
-      >
-        <Wmatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'WUmatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewWUmatraModal}
-        onClose={() => closeModal('viewWUmatraModal')}
-      >
-        <WUmatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'RMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewRMatraModal}
-        onClose={() => closeModal('viewRMatraModal')}
-      >
-        <RMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'FMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewFMatraModal}
-        onClose={() => closeModal('viewFMatraModal')}
-      >
-        <FMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'FeMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewFeMatraModal}
-        onClose={() => closeModal('viewFeMatraModal')}
-      >
-        <FeMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'AaeMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAaeMatraModal}
-        onClose={() => closeModal('viewAaeMatraModal')}
-      >
-        <AaeMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'AEMatra' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAEMatraModal}
-        onClose={() => closeModal('viewAEMatraModal')}
-      >
-        <AEMatra />
-      </SimpleModal>
-      <SimpleModal
-        id={'Anausvaar' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAnausvaarModal}
-        onClose={() => closeModal('viewAnausvaarModal')}
-      >
-        <Anausvaar />
-      </SimpleModal>
-      <SimpleModal
-        id={'Anausvaar' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAnausvaarModal}
-        onClose={() => closeModal('viewAnausvaarModal')}
-      >
-        <Anausvaar />
-      </SimpleModal>
-      <SimpleModal
-        id={'Anaunaaisak' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewAnaunaaisakModal}
-        onClose={() => closeModal('viewAnaunaaisakModal')}
-      >
-        <Anaunaaisak />
-      </SimpleModal>
-      <SimpleModal
-        id={'Sanyukt' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewSanyuktModal}
-        onClose={() => closeModal('viewSanyuktModal')}
-      >
-        <Sanyukt />
-      </SimpleModal>
-      <SimpleModal
-        id={'Barakhari' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewBarakhariModal}
-        onClose={() => closeModal('viewBarakhariModal')}
-      >
-        <Barakhari />
-      </SimpleModal>
-      <SimpleModal
-        id={'Matraein' + '_modal'}
-        title={state?.modalTitle}
-        show={state.viewMatraeinModal}
-        onClose={() => closeModal('viewMatraeinModal')}
-      >
-        <Matraein />
-      </SimpleModal>
     </>
   );
 }

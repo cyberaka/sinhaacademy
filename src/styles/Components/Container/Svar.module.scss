@@ -8,6 +8,9 @@
     justify-content: center;
     gap: 25px;
     align-items: center;
+    @media (max-width: 1199.98px) {
+      padding-top: 45px;
+    }
     h1 {
       color: #0055D5;
       display: inline-block;
@@ -21,6 +24,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 0 !important;
+      @media (max-width: 1199.98px) {
+        font-size: 48px;
+       
+      }
     }
   }
   .FeedbackWrap {
