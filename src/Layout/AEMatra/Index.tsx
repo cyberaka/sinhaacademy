@@ -182,9 +182,13 @@ function Index() {
       <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="aaematra"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="aaematra">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>औ Matra</h1>
-            <a href="anausvaar"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="anausvaar">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
 

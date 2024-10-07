@@ -11,7 +11,6 @@ const leftTenBoy = '/assets/images/left_ten_boy.png';
 const leftIcon = '/assets/images/left_arrow.png';
 const rightIcon = '/assets/images/right_arrow.png';
 
-
 const RoseMap = [
   { name: 'ग', audioUrl: '/assets/mp3/vyanjan/ग.mp3' },
   { name: 'ु', audioUrl: '/assets/mp3/matraein/ु.mp3' },
@@ -166,12 +165,16 @@ function Index() {
 
   return (
     <>
-     <div className={styles.LearningPage}>
+      <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="eematra"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="eematra">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>उ Matra</h1>
-            <a href="wumatra"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="wumatra">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
 

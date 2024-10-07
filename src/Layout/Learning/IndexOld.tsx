@@ -21,9 +21,9 @@ import Matraein from '../Matraein/Index';
 import RMatra from '../RMatra/Index';
 import Sanyukt from '../Sanyukt/Index';
 import Svar from '../Svar/Index';
+import Vyanjan from '../Vyanjan/Index';
 import Umatra from '../Wmatra/Index';
 import UUmatra from '../WUmatra/Index';
-import Vyanjan from '../Vyanjan/Index';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';

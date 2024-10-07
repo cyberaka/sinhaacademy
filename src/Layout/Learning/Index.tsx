@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
-import styles from '@/styles/Components/Container/Learning.module.scss';
 
+import styles from '@/styles/Components/Container/Learning.module.scss';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
@@ -28,7 +28,6 @@ const S2 = '/assets/images/s_2.png';
 const A1 = '/assets/images/a_1.png';
 const A2 = '/assets/images/a_2.png';
 function Index() {
-  
   return (
     <>
       <div className={styles.LearningPage}>
@@ -56,7 +55,7 @@ function Index() {
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.AccordionBox}>
                         <div className={styles.learningBox}>
-                          <a href="svar" >
+                          <a href="svar">
                             <img src={B1} alt="Svar" />
                             <h4 className="mt-3">svar</h4>
                           </a>
@@ -80,7 +79,7 @@ function Index() {
                     <Accordion.Header className="w-100 text-start pb-4 mb-5 accordion-header">Words</Accordion.Header>
                     <Accordion.Body className={styles.AccordionRow}>
                       <div className={styles.WordBox}>
-                        <div className={styles.learningBox} >
+                        <div className={styles.learningBox}>
                           <a href="aamatra">
                             <img src={W1} alt="Aa maaPaa" />
                             <h4 className="mt-3">Aa maaPaa</h4>
@@ -123,7 +122,7 @@ function Index() {
                         <div className={styles.learningBox}>
                           <a href="fmatra">
                             <img src={W6} alt="F maaPaa" />
-                          <h4 className="mt-3">F maaPaa</h4>
+                            <h4 className="mt-3">F maaPaa</h4>
                           </a>
                         </div>
                       </div>
@@ -131,7 +130,7 @@ function Index() {
                         <div className={styles.learningBox}>
                           <a href="fematra">
                             <img src={W7} alt="Fe maaPaa" />
-                          <h4 className="mt-3">Fe maaPaa</h4>
+                            <h4 className="mt-3">Fe maaPaa</h4>
                           </a>
                         </div>
                       </div>
@@ -139,7 +138,7 @@ function Index() {
                         <div className={styles.learningBox}>
                           <a href="aaematra">
                             <img src={W8} alt="Aae maaPaa" />
-                          <h4 className="mt-3">Aae maaPaa</h4>
+                            <h4 className="mt-3">Aae maaPaa</h4>
                           </a>
                         </div>
                       </div>
@@ -147,7 +146,7 @@ function Index() {
                         <div className={styles.learningBox}>
                           <a href="aematra">
                             <img src={W9} alt="AaE maaPaa" />
-                          <h4 className="mt-3">AaE maaPaa</h4>
+                            <h4 className="mt-3">AaE maaPaa</h4>
                           </a>
                         </div>
                       </div>

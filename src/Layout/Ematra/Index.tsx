@@ -195,9 +195,13 @@ function Index() {
       <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="svar"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="svar">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>इ Matra</h1>
-            <a href="eematra"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="eematra">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
 
@@ -210,7 +214,6 @@ function Index() {
         </div>
         <div className={styles.LearningWrap}>
           <Container>
-            
             <div className={styles.baloonGroup1}>
               <div className={styles.aaMatraWrap}>
                 {BookMap.map((item: any, index: number) => (

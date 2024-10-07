@@ -64,23 +64,26 @@ function Index() {
     const audio = new Audio(audioUrl);
     audio.play();
 
-
     const updatedVyanjanMap = VyanjanMap.map(item => {
-        if (item.name === name) {
-          return { ...item, active: !item.active };
-        }
-        return item;
-      });
-      setVyanjanMap(updatedVyanjanMap);
+      if (item.name === name) {
+        return { ...item, active: !item.active };
+      }
+      return item;
+    });
+    setVyanjanMap(updatedVyanjanMap);
   };
   return (
     <>
       <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="svar"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="svar">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>व्यंजन Vyanjan</h1>
-            <a href="aamatra"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="aamatra">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
 
@@ -95,8 +98,11 @@ function Index() {
           <Container>
             <div className={styles.baloonGroup}>
               {VyanjanMap.map((item: any, index: number) => (
-                <div key={index}className={`${styles.SingleBaloon} ${item.active ? 'active' : ''}`}
-                onClick={() => handlePlayAudio(item.audioUrl, item.name)}>
+                <div
+                  key={index}
+                  className={`${styles.SingleBaloon} ${item.active ? 'active' : ''}`}
+                  onClick={() => handlePlayAudio(item.audioUrl, item.name)}
+                >
                   <div className={styles.BaloonImg}>
                     <img src={BaloonImg} alt="Balloon" />
                   </div>

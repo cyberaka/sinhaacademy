@@ -142,9 +142,13 @@ function Index() {
       <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="wmatra"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="wmatra">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>ऊ Matra</h1>
-            <a href="rmatra"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="rmatra">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
 
@@ -156,7 +160,7 @@ function Index() {
           </div>
         </div>
         <div className={styles.LearningWrap}>
-          <Container> 
+          <Container>
             <div className={styles.baloonGroup1}>
               <div className={styles.aaMatraWrap}>
                 {FlowerMap.map((item: any, index: number) => (

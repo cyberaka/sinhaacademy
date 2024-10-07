@@ -11,8 +11,6 @@ const leftTenBoy = '/assets/images/left_ten_boy.png';
 const leftIcon = '/assets/images/left_arrow.png';
 const rightIcon = '/assets/images/right_arrow.png';
 
-
-
 const LeopardMap = [
   { name: 'च', audioUrl: '/assets/mp3/vyanjan/च.mp3' },
   { name: 'ी', audioUrl: '/assets/mp3/matraein/ी.mp3' },
@@ -177,9 +175,13 @@ function Index() {
       <div className={styles.LearningPage}>
         <Container>
           <div className={styles.baloonTitle}>
-            <a href="ematra"><img src={leftIcon} alt="Left Boy" /></a>
+            <a href="ematra">
+              <img src={leftIcon} alt="Left Boy" />
+            </a>
             <h1>ई Matra</h1>
-            <a href="wmatra"><img src={rightIcon} alt="Left Boy" /></a>
+            <a href="wmatra">
+              <img src={rightIcon} alt="Left Boy" />
+            </a>
           </div>
         </Container>
         <div className={styles.FeedbackWrap}>
