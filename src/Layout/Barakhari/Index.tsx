@@ -378,11 +378,11 @@ function Index() {
     <div className={styles.LearningPage}>
       <Container>
         <div className={styles.baloonTitle}>
-          <a href="mataraein">
+          <a href="matraein">
             <img src={leftIcon} alt="Left Boy" />
           </a>
           <h1>Barakhari</h1>
-          <a href="javascript:void(0)">
+          <a href="twoletter">
             <img src={rightIcon} alt="Left Boy" />
           </a>
         </div>

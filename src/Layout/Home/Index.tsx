@@ -94,56 +94,56 @@ function Index() {
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box1} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Introduction to Hindi vowels and their sounds.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box2} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Understanding the vowel signs that modify the sounds of consonants.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box3} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Learning the nasal sound represented by the dot above a letter.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box4} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Grasping the nasalized sounds in Hindi </h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box5} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Exploring the voiceless glottal fricative represented by ":"</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box6} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Mastering the combined consonants.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box7} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Learning about the conjunct consonants </h5>
                   </div>
                 </Col>
 
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box8} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Detailed study of vowel signs and their combinations.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <img src={Box9} alt="Box " />
-                    <h5>Introduction to Hindi vowels and </h5>
+                    <h5>Understanding the complete set of consonant-vowel combinations</h5>
                   </div>
                 </Col>
               </Row>

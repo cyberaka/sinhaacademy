@@ -10,7 +10,7 @@ const centerGirl = '/assets/images/center_girl.png';
 const leftTenBoy = '/assets/images/left_ten_boy.png';
 const leftIcon = '/assets/images/left_arrow.png';
 const rightIcon = '/assets/images/right_arrow.png';
-
+const PlayIcon = '/assets/images/play.png';
 const RoseMap = [
   { name: 'ग', audioUrl: '/assets/mp3/vyanjan/ग.mp3' },
   { name: 'ु', audioUrl: '/assets/mp3/matraein/ु.mp3' },
@@ -209,6 +209,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Rose</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -235,6 +238,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Socks</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -261,6 +267,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Tortoise</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -287,6 +296,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Bridge</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -313,6 +325,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Silent</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -339,6 +354,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Listen</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -365,6 +383,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Bad</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -391,6 +412,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Shop</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -417,6 +441,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Lookat</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -443,6 +470,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Knee</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -469,6 +499,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Shirt</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -495,6 +528,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Jamun</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -521,6 +557,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Pink</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -547,6 +586,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Chunari</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -573,6 +615,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Kumud</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -599,6 +644,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Priest</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -625,6 +673,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Safflower</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -651,6 +702,9 @@ function Index() {
                       {item.name}
                     </h6>
                     <div className={styles.englishName}>Chair</div>
+                    <div className={styles.PlayWrap}>
+                      <img src={PlayIcon} alt="Play" />
+                    </div>
                   </div>
                 ))}
               </div>

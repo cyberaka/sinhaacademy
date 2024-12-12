@@ -185,9 +185,9 @@ function Index() {
                       </div>
                       <div className={styles.MatraBox}>
                         <div className={styles.learningBox}>
-                          <a href="anausvaar">
+                          <a href="visarg">
                             <img src={M3} alt="Anausvaar" />
-                            <h4 className="mt-3">Anausvaar</h4>
+                            <h4 className="mt-3">विसर्ग</h4>
                           </a>
                         </div>
                       </div>
@@ -245,6 +245,27 @@ function Index() {
                           <a href="barakhari">
                             <img src={A2} alt="baarhKaDI" />
                             <h4 className="mt-3">baarhKaDI</h4>
+                          </a>
+                        </div>
+                      </div>
+                      <div className={styles.AdvancedBox}>
+                        <div className={styles.learningBox}>
+                          <a href="twoletter">
+                            <h4 className={styles.LetterWrap}>Two Letter</h4>
+                          </a>
+                        </div>
+                      </div>
+                      <div className={styles.AdvancedBox}>
+                        <div className={styles.learningBox}>
+                          <a href="threeletter">
+                            <h4 className={styles.LetterWrap}>Three Letter</h4>
+                          </a>
+                        </div>
+                      </div>
+                      <div className={styles.AdvancedBox}>
+                        <div className={styles.learningBox}>
+                          <a href="fourletter">
+                            <h4 className={styles.LetterWrap}>Four Letter</h4>
                           </a>
                         </div>
                       </div>

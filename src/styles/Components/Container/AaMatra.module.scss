@@ -57,8 +57,8 @@
     display: flex;
     flex-wrap: wrap;
     .aaMatraWrap {
-      flex:0 0 70%;
-      max-width: 70%;
+      flex:0 0 60%;
+      max-width: 60%;
       display: flex;
       .SingleBaloon {
         display: flex;
@@ -76,11 +76,11 @@
           h5 {
             position: absolute;
             top: 8px;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 600;
             margin: 0;
             width: 100%;
-            height: 100px;
+            height: 80px;
             z-index: 1111;
             left: 0;
             padding: 0;
@@ -104,14 +104,14 @@
       }
     }
     .aaMatraRightWrap {
-      flex: 0 0 30%;
-      max-width: 30%;
-      padding-top: 30px;
+      flex: 0 0 40%;
+      max-width: 40%;
+      padding-top: 20px;
       .NameBg {
         display: flex;
         align-items: center;
         h6 {
-          font-size: 28px;
+          font-size: 25px;
           font-weight: 400;
           border-radius: 10px;
           font-family: 'ams_barakhadi_1regular';
@@ -124,6 +124,7 @@
           text-align: center;
           margin-bottom: 0;
           margin-right: 10px;
+          width: 40%;
           @media (max-width: 1399.98px) {
             font-size: 22px;
             padding: 6px 15px ;
@@ -136,7 +137,7 @@
           }
         }
         .englishName {
-          font-size: 28px;
+          font-size: 25px;
           font-weight: 400;
           border-radius: 10px;
           font-family: 'itc_officina_sans_stdbook';
@@ -145,6 +146,8 @@
           background-color: #D50066;
           color: #fff;
           border: 2px solid #D50066;
+          width: 40%;
+          text-align: center;
           @media (max-width: 1399.98px) {
             font-size: 22px;
             padding: 6px 15px ;
@@ -154,6 +157,12 @@
             font-size: 18px;
             padding: 5px 15px ;
             line-height: 32px;
+          }
+        }
+        .PlayWrap {
+          padding-left: 10px;
+          img {
+            width: 55px;
           }
         }
       }

@@ -50,7 +50,7 @@ function Index() {
     <div className={styles.LearningPage}>
       <Container>
         <div className={styles.baloonTitle}>
-          <a href="sanyyukt">
+          <a href="sanyukt">
             <img src={leftIcon} alt="Left Boy" />
           </a>
           <h1>मात्राएं</h1>
