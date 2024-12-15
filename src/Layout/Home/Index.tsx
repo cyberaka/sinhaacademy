@@ -158,7 +158,7 @@ function Index() {
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
-                    <a href="/ditvavyanjan">
+                    <a href="/ditvavyajan">
                     <img src={Box7} alt="Box " />
                     <h5>Learning about the conjunct consonants </h5>
                     </a>
