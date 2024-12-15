@@ -216,8 +216,10 @@ function Index() {
                       </div>
                       <div className={styles.SpecialBox}>
                         <div className={styles.learningBox}>
-                          <img src={S2} alt="idtva vya/jana" />
-                          <h4 className="mt-3">idtva vya/jana</h4>
+                          <a href="ditvavyajan">
+                            <img src={S2} alt="idtva vya/jana" />
+                            <h4 className="mt-3">idtva vya/jana</h4>
+                          </a>
                         </div>
                       </div>
                     </Accordion.Body>
