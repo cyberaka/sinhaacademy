@@ -27,7 +27,18 @@
   font-style: normal;
 
 }
-
+.carousel-inner {
+  display: flex;
+}
+.slide-content {
+    text-align: center;
+}
+.slide-content {
+  text-align: center;
+}
+.carousel-indicators {
+  display: none;
+}
 h1 {
   font-size: $fs48;
   font-weight: $font-weight-semibold;

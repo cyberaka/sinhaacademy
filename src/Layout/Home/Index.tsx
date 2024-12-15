@@ -1,16 +1,20 @@
 'use client';
 
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import styles from '@/styles/Components/Container/Home.module.scss';
 
 function Index() {
+
   const MeetBanner = '/assets/images/meet_hindi.png';
   const RightBall = '/assets/images/right_ball_boy.png';
   const centerGirl = '/assets/images/center_girl.png';
   const leftTenBoy = '/assets/images/left_ten_boy.png';
   const FunEase = '/assets/images/fun_ease.png';
+  const B1 = '/assets/images/b1.png';
+  const B2 = '/assets/images/b2.png';
+  const B3 = '/assets/images/b3.png';
+  const B4 = '/assets/images/b4.png';
   const OurCurriculumLeft = '/assets/images/our_curriculum_left.png';
   const OurCurriculumRight = '/assets/images/our_curriculum_right.png';
   const Box1 = '/assets/images/curriculum_1.png';
@@ -29,27 +33,39 @@ function Index() {
   const W3 = '/assets/images/expert_educators.png';
   const W4 = '/assets/images/comprehensive_resources.png';
   const W5 = '/assets/images/cultural_insights.png';
+
   return (
     <>
       <div className={styles.HomePage}>
         <div className={styles.meetHindiContent}>
           <Container>
-            <div className={styles.backClrF}>
-              <div className={styles.backClrS}>
-                <Row className={styles.BgCls}>
-                  <Col md="6" className={styles.textStart}>
-                    <h1 className={styles.txtOuter}>Meet Hindi!</h1>
-                    <p>
-                      Hello, little friends! Welcome to the magical world of Hindi. Let's start by meeting the Hindi
-                      alphabet and learning some cool facts about this language. Are you ready to have some fun while
-                      learning?
-                    </p>
-                  </Col>
-                  <Col md="6">
-                    <img src={MeetBanner} alt="" />
-                  </Col>
-                </Row>
-              </div>
+            
+            <div className="slider-container">
+              <Carousel interval={5000} indicators={true}>
+              <Carousel.Item>
+                  <div className="slide-content">
+                    <img src={B1} alt="" />
+                  </div>
+                  </Carousel.Item>
+
+                {/* Add more slides if needed */}
+                <Carousel.Item>
+                  <div className="slide-content">
+                    <img src={B2} alt="" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="slide-content">
+                    <img src={B3} alt="" />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="slide-content">
+                    <img src={B4} alt="" />
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              
             </div>
           </Container>
         </div>
@@ -93,57 +109,76 @@ function Index() {
               <Row>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/svar">
                     <img src={Box1} alt="Box " />
                     <h5>Introduction to Hindi vowels and their sounds.</h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
-                    <img src={Box2} alt="Box " />
-                    <h5>Understanding the vowel signs that modify the sounds of consonants.</h5>
+                    <a href="/anausvaar">
+                      <img src={Box2} alt="Box " />
+                      <h5>Understanding the vowel signs that modify the sounds of consonants.</h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/anausvaar">
+
                     <img src={Box3} alt="Box " />
+                    </a>
                     <h5>Learning the nasal sound represented by the dot above a letter.</h5>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/anaunaaisak">
                     <img src={Box4} alt="Box " />
                     <h5>Grasping the nasalized sounds in Hindi </h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/visarg">
                     <img src={Box5} alt="Box " />
                     <h5>Exploring the voiceless glottal fricative represented by ":"</h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/sanyukt">
                     <img src={Box6} alt="Box " />
                     <h5>Mastering the combined consonants.</h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/ditvavyanjan">
                     <img src={Box7} alt="Box " />
                     <h5>Learning about the conjunct consonants </h5>
+                    </a>
                   </div>
                 </Col>
 
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/matraein">
                     <img src={Box8} alt="Box " />
                     <h5>Detailed study of vowel signs and their combinations.</h5>
+                    </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
+                    <a href="/barakhari">
                     <img src={Box9} alt="Box " />
                     <h5>Understanding the complete set of consonant-vowel combinations</h5>
+                    </a>
                   </div>
                 </Col>
               </Row>
