@@ -20,25 +20,25 @@ const Duck1Map = [{ name: 'बत्तख', audioUrl: '/assets/mp3/words/बत
 const LotusMap = [
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
   { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
-  { name: 'ल', audioUrl: '/assets/mp3/vyanjan/ल.mp3' }
+  { name: 'ल', audioUrl: '/assets/mp3/vyanjan/ल.mp3' },
 ];
 const Lotus2Map = [{ name: 'कमल', audioUrl: '/assets/mp3/words/कमल.mp3' }];
 const RoadMap = [
-  { name: 'स', audioUrl: '/assets/mp3/vyanjan/स.mp3'},
-  { name: 'ड़', audioUrl: '/assets/mp3/vyanjan/ड़.mp3'},
-  { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3'}
+  { name: 'स', audioUrl: '/assets/mp3/vyanjan/स.mp3' },
+  { name: 'ड़', audioUrl: '/assets/mp3/vyanjan/ड़.mp3' },
+  { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
 ];
 const Road1Map = [{ name: 'सड़क', audioUrl: '/assets/mp3/words/सड़क.mp3' }];
 const PeaMap = [
   { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
   { name: 'ट', audioUrl: '/assets/mp3/matraein/ट.mp3' },
-  { name: 'र', audioUrl: '/assets/mp3/matraein/र.mp3' }
+  { name: 'र', audioUrl: '/assets/mp3/matraein/र.mp3' },
 ];
 const Pea1Map = [{ name: 'मटर', audioUrl: '/assets/mp3/words/मटर.mp3' }];
 const PenMap = [
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
   { name: 'ल', audioUrl: '/assets/mp3/vyanjan/ल.mp3' },
-  { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' }
+  { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
 ];
 const Pen1Map = [{ name: 'कलम', audioUrl: '/assets/mp3/words/कलम.mp3' }];
 const ButtonMap = [
@@ -290,7 +290,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-
                   </div>
                 ))}
               </div>
@@ -320,8 +319,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -351,8 +348,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -411,8 +406,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -442,8 +435,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -473,8 +464,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -504,8 +493,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -535,8 +522,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -566,8 +551,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -597,8 +580,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -628,8 +609,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -659,8 +638,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -690,8 +667,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -721,8 +696,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -752,8 +725,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -783,8 +754,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -814,8 +783,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>

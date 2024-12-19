@@ -247,7 +247,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
                   </div>
                 ))}
               </div>

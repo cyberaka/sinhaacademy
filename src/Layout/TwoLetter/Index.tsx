@@ -13,22 +13,22 @@ const rightIcon = '/assets/images/right_arrow.png';
 const PlayIcon = '/assets/images/play.png';
 const TapMap = [
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
-  { name: 'ल', audioUrl: '/assets/mp3/matraein/ल.mp3' }
+  { name: 'ल', audioUrl: '/assets/mp3/matraein/ल.mp3' },
 ];
 const Tap1Map = [{ name: 'नल', audioUrl: '/assets/mp3/words/नल.mp3' }];
 const ThisMap = [
   { name: 'य', audioUrl: '/assets/mp3/vyanjan/य.mp3' },
-  { name: 'ह', audioUrl: '/assets/mp3/vyanjan/ह.mp3' }
+  { name: 'ह', audioUrl: '/assets/mp3/vyanjan/ह.mp3' },
 ];
 const This2Map = [{ name: 'यह', audioUrl: '/assets/mp3/words/यह.mp3' }];
 const BodyMap = [
-  { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3'},
-  { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3'}
+  { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
+  { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
 ];
 const Body1Map = [{ name: 'तन', audioUrl: '/assets/mp3/words/तन.mp3' }];
 const TenMap = [
   { name: 'द', audioUrl: '/assets/mp3/vyanjan/द.mp3' },
-  { name: 'स', audioUrl: '/assets/mp3/matraein/स.mp3' }
+  { name: 'स', audioUrl: '/assets/mp3/matraein/स.mp3' },
 ];
 const Ten1Map = [{ name: 'दस', audioUrl: '/assets/mp3/words/दस.mp3' }];
 const ThenMap = [
@@ -43,7 +43,7 @@ const ComeMap = [
 const Come1Map = [{ name: 'चल', audioUrl: '/assets/mp3/words/चल.mp3' }];
 const ThatMap = [
   { name: 'व', audioUrl: '/assets/mp3/vyanjan/व.mp3' },
-  { name: 'ह', audioUrl: '/assets/mp3/vyanjan/ह.mp3' }
+  { name: 'ह', audioUrl: '/assets/mp3/vyanjan/ह.mp3' },
 ];
 const That1Map = [{ name: 'वह', audioUrl: '/assets/mp3/words/वह.mp3' }];
 const MindMap = [
@@ -53,12 +53,12 @@ const MindMap = [
 const Mind1Map = [{ name: 'मन', audioUrl: '/assets/mp3/words/मन.mp3' }];
 const JuiceMap = [
   { name: 'र', audioUrl: '/assets/mp3/vyanjan/र.mp3' },
-  { name: 'स', audioUrl: '/assets/mp3/vyanjan/स.mp3' }
+  { name: 'स', audioUrl: '/assets/mp3/vyanjan/स.mp3' },
 ];
 const Juice1Map = [{ name: 'रस', audioUrl: '/assets/mp3/words/रस.mp3' }];
 const NowMap = [
   { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
-  { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' }
+  { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' },
 ];
 const Now1Map = [{ name: 'अब', audioUrl: '/assets/mp3/words/अब.mp3' }];
 const MomentMap = [
@@ -258,8 +258,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -289,8 +287,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -320,8 +316,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -380,8 +374,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -411,8 +403,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -442,8 +432,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -473,8 +461,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -504,8 +490,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -535,8 +519,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -566,8 +548,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -597,8 +577,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -628,8 +606,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -659,8 +635,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -690,8 +664,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -721,8 +693,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>
@@ -752,8 +722,6 @@ function Index() {
                     <div className={styles.PlayWrap}>
                       <img src={PlayIcon} alt="Play" />
                     </div>
-                    
-                    
                   </div>
                 ))}
               </div>

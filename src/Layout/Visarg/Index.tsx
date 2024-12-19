@@ -17,19 +17,19 @@ const MorningMap = [
   { name: 'प्र', audioUrl: '/assets/mp3/extra/प्र.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
-  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' }
+  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Morning1Map = [{ name: 'प्रातः', audioUrl: '/assets/mp3/words/प्रातः.mp3' }];
 const NamahMap = [
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
   { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
-  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' }
+  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Namah2Map = [{ name: 'नमः', audioUrl: '/assets/mp3/words/नमः.mp3' }];
 const AtahMap = [
   { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
-  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' }
+  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Atah1Map = [{ name: 'अतः', audioUrl: '/assets/mp3/words/अतः.mp3' }];
 const EventuallyMap = [
@@ -37,14 +37,14 @@ const EventuallyMap = [
   { name: 'ं', audioUrl: '/assets/mp3/matraein/ं.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
-  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' }
+  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Eventually1Map = [{ name: 'अंततः', audioUrl: '/assets/mp3/words/अंततः.mp3' }];
 const ShanehMap = [
   { name: 'श', audioUrl: '/assets/mp3/vyanjan/श.mp3' },
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
   { name: 'ै', audioUrl: '/assets/mp3/matraein/ै.mp3' },
-  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' }
+  { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Shaneh1Map = [{ name: 'शनैः', audioUrl: '/assets/mp3/words/शनैः.mp3' }];
 const OftenMap = [

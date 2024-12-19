@@ -1,11 +1,13 @@
 'use client';
 
+import 'swiper/swiper-bundle.css';
+
 import React from 'react';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import styles from '@/styles/Components/Container/Home.module.scss';
-
 function Index() {
-
   const MeetBanner = '/assets/images/meet_hindi.png';
   const RightBall = '/assets/images/right_ball_boy.png';
   const centerGirl = '/assets/images/center_girl.png';
@@ -39,33 +41,29 @@ function Index() {
       <div className={styles.HomePage}>
         <div className={styles.meetHindiContent}>
           <Container>
-            
             <div className="slider-container">
-              <Carousel interval={5000} indicators={true}>
-              <Carousel.Item>
+              <Swiper spaceBetween={10} slidesPerView={1} loop={true} autoplay={{ delay: 3000 }}>
+                <SwiperSlide>
                   <div className="slide-content">
-                    <img src={B1} alt="" />
+                    <img src={B1} />
                   </div>
-                  </Carousel.Item>
-
-                {/* Add more slides if needed */}
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                   <div className="slide-content">
-                    <img src={B2} alt="" />
+                    <img src={B2} />
                   </div>
-                </Carousel.Item>
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                   <div className="slide-content">
-                    <img src={B3} alt="" />
+                    <img src={B3} />
                   </div>
-                </Carousel.Item>
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                   <div className="slide-content">
-                    <img src={B4} alt="" />
+                    <img src={B4} />
                   </div>
-                </Carousel.Item>
-              </Carousel>
-              
+                </SwiperSlide>
+              </Swiper>
             </div>
           </Container>
         </div>
@@ -110,8 +108,8 @@ function Index() {
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/svar">
-                    <img src={Box1} alt="Box " />
-                    <h5>Introduction to Hindi vowels and their sounds.</h5>
+                      <img src={Box1} alt="Box " />
+                      <h5>Introduction to Hindi vowels and their sounds.</h5>
                     </a>
                   </div>
                 </Col>
@@ -126,8 +124,7 @@ function Index() {
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/anausvaar">
-
-                    <img src={Box3} alt="Box " />
+                      <img src={Box3} alt="Box " />
                     </a>
                     <h5>Learning the nasal sound represented by the dot above a letter.</h5>
                   </div>
@@ -135,32 +132,32 @@ function Index() {
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/anaunaaisak">
-                    <img src={Box4} alt="Box " />
-                    <h5>Grasping the nasalized sounds in Hindi </h5>
+                      <img src={Box4} alt="Box " />
+                      <h5>Grasping the nasalized sounds in Hindi </h5>
                     </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/visarg">
-                    <img src={Box5} alt="Box " />
-                    <h5>Exploring the voiceless glottal fricative represented by ":"</h5>
+                      <img src={Box5} alt="Box " />
+                      <h5>Exploring the voiceless glottal fricative represented by ":"</h5>
                     </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/sanyukt">
-                    <img src={Box6} alt="Box " />
-                    <h5>Mastering the combined consonants.</h5>
+                      <img src={Box6} alt="Box " />
+                      <h5>Mastering the combined consonants.</h5>
                     </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/ditvavyajan">
-                    <img src={Box7} alt="Box " />
-                    <h5>Learning about the conjunct consonants </h5>
+                      <img src={Box7} alt="Box " />
+                      <h5>Learning about the conjunct consonants </h5>
                     </a>
                   </div>
                 </Col>
@@ -168,16 +165,16 @@ function Index() {
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/matraein">
-                    <img src={Box8} alt="Box " />
-                    <h5>Detailed study of vowel signs and their combinations.</h5>
+                      <img src={Box8} alt="Box " />
+                      <h5>Detailed study of vowel signs and their combinations.</h5>
                     </a>
                   </div>
                 </Col>
                 <Col md="4">
                   <div className={styles.ourCurriculumBox}>
                     <a href="/barakhari">
-                    <img src={Box9} alt="Box " />
-                    <h5>Understanding the complete set of consonant-vowel combinations</h5>
+                      <img src={Box9} alt="Box " />
+                      <h5>Understanding the complete set of consonant-vowel combinations</h5>
                     </a>
                   </div>
                 </Col>

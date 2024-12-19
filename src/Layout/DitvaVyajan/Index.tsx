@@ -16,21 +16,21 @@ const KripaanMap = [
   { name: 'ृ', audioUrl: '/assets/mp3/matraein/ृ.mp3' },
   { name: 'प', audioUrl: '/assets/mp3/vyanjan/प.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
-  { name: 'ण', audioUrl: '/assets/mp3/vyanjan/ण.mp3' }
+  { name: 'ण', audioUrl: '/assets/mp3/vyanjan/ण.mp3' },
 ];
 const Kripaan1Map = [{ name: 'कृपाण', audioUrl: '/assets/mp3/words/कृपाण.mp3' }];
 const KidMap = [
   { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' },
   { name: 'च्', audioUrl: '/assets/mp3/extra/च्.mp3' },
   { name: 'च', audioUrl: '/assets/mp3/vyanjan/च.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Kid1Map = [{ name: 'बच्चा', audioUrl: '/assets/mp3/words/बच्चा.mp3' }];
 const RopeMap = [
   { name: 'र', audioUrl: '/assets/mp3/vyanjan/र.mp3' },
   { name: 'स्', audioUrl: '/assets/mp3/extra/स्.mp3' },
   { name: 'स', audioUrl: '/assets/mp3/vyanjan/स.mp3' },
-  { name: 'ी', audioUrl: '/assets/mp3/matraein/ी.mp3' }
+  { name: 'ी', audioUrl: '/assets/mp3/matraein/ी.mp3' },
 ];
 const Rope1Map = [{ name: 'रस्सी', audioUrl: '/assets/mp3/words/रस्सी.mp3' }];
 const CatMap = [
@@ -48,7 +48,7 @@ const BalloonMap = [
   { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
   { name: 'र', audioUrl: '/assets/mp3/matraein/र.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Balloon1Map = [{ name: 'गुब्बारा', audioUrl: '/assets/mp3/words/गुब्बारा.mp3' }];
 const DogMap = [
@@ -56,28 +56,28 @@ const DogMap = [
   { name: 'ु', audioUrl: '/assets/mp3/matraein/ु.mp3' },
   { name: 'त्', audioUrl: '/assets/mp3/extra/त्.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Dog1Map = [{ name: 'कुत्ता', audioUrl: '/assets/mp3/words/कुत्ता.mp3' }];
 const MaizeMap = [
   { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
   { name: 'क्', audioUrl: '/assets/mp3/extra/क्.mp3' },
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Maize1Map = [{ name: 'मक्का', audioUrl: '/assets/mp3/words/मक्का.mp3' }];
 const SourMap = [
   { name: 'ख', audioUrl: '/assets/mp3/vyanjan/ख.mp3' },
   { name: 'ट्', audioUrl: '/assets/mp3/matraein/ट्.mp3' },
   { name: 'ट', audioUrl: '/assets/mp3/vyanjan/ट.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Sour1Map = [{ name: 'खट्टा', audioUrl: '/assets/mp3/words/खट्टा.mp3' }];
 const RawMap = [
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
   { name: 'च्', audioUrl: '/assets/mp3/matraein/च्.mp3' },
   { name: 'च', audioUrl: '/assets/mp3/vyanjan/च.mp3' },
-  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' }
+  { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Raw1Map = [{ name: 'कच्चा', audioUrl: '/assets/mp3/words/कच्चा.mp3' }];
 const SpoonMap = [
