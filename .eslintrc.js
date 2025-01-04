@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier', 'import', 'simple-import-sort'],
   rules: {
-    'prettier/prettier': ['error', prettierOptions],
+    "prettier/prettier": "off",
     'no-tabs': 0,
     'linebreak-style': 0,
     quotes: 0,

@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import styles from '@/styles/Components/Container/Header.module.scss';
 function Header() {
   const logoImage = '/assets/images/logo.png';
-  const searchImage = '/assets/images/Search.png';
+  const searchImage = '/assets/images/search.png';
   return (
     <>
       <div className={styles.Header}>

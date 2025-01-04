@@ -4,6 +4,7 @@ import 'swiper/swiper-bundle.css';
 
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from '@/styles/Components/Container/Home.module.scss';
@@ -42,7 +43,13 @@ function Index() {
         <div className={styles.meetHindiContent}>
           <Container>
             <div className="slider-container">
-              <Swiper spaceBetween={10} slidesPerView={1} loop={true} autoplay={{ delay: 3000 }}>
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+              >
                 <SwiperSlide>
                   <div className="slide-content">
                     <img src={B1} />
