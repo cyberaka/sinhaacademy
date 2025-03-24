@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import styles from '@/styles/Components/Container/AaMatra.module.scss';
+import { handlePlayAllAudio,handlePlayAudio } from '@/utils/audioUtils';
+
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
 const leftTenBoy = '/assets/images/left_ten_boy.png';
@@ -159,31 +161,6 @@ const Tomato1Map = [{ name: 'टमाटर', audioUrl: '/assets/mp3/words/ट�
 function Index() {
   const [selectedValue, setSeletedValue] = useState<string>('');
   const BaloonImg = '/assets/images/yellow_baloon.png';
-
-  const handlePlayAudio = (audioUrl: string, name: string) => {
-    setSeletedValue(name);
-    const audio = new Audio(audioUrl);
-    audio.play();
-  };
-
-  // The intention is to perform playback of individual elements
-  // in the map1 array followed by the elements in the map2 array
-  // A gap of 1 second is maintained between each element in the map1 and map2 arrays
-  const handlePlayAllAudio = (map1: any[], map2: any[]) => {
-    map1.forEach((item: any, index: number) => {
-      setTimeout(() => {
-        handlePlayAudio(item.audioUrl, item.name);
-      }, index * 1000); // 1 second gap between each map1 item
-    });
-  
-    setTimeout(() => {
-      map2.forEach((item: any, index: number) => {
-        setTimeout(() => {
-          handlePlayAudio(item.audioUrl, item.name);
-        }, index * 1000); // 1 second gap between each map2 item
-      });
-    }, ((map1.length * 1000) + 1000)); // Start map2 after map1 finishes
-  };
 
   return (
     <>
