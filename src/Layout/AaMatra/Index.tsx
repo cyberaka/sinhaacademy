@@ -70,7 +70,7 @@ const GreenMap = [
 ];
 const Green1Map = [{ name: 'हरा', audioUrl: '/assets/mp3/words/हरा.mp3' }];
 const BoatMap = [
-  { name: 'न', audioUrl: '/assets/mp3/vyanjan/ह.mp3' },
+  { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
   { name: 'व', audioUrl: '/assets/mp3/vyanjan/व.mp3' },
 ];
@@ -82,7 +82,7 @@ const EveningMap = [
 ];
 const Evening1Map = [{ name: 'शाम', audioUrl: '/assets/mp3/words/शाम.mp3' }];
 const ComeMap = [
-  { name: 'आ', audioUrl: '/assets/mp3/vyanjan/आ.mp3' },
+  { name: 'आ', audioUrl: '/assets/mp3/swara/आ.mp3' },
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
@@ -123,7 +123,7 @@ const HabitMap = [
 const Habit1Map = [{ name: 'आदत', audioUrl: '/assets/mp3/words/आदत.mp3' }];
 const RestMap = [
   { name: 'आ', audioUrl: '/assets/mp3/swara/आ.mp3' },
-  { name: 'र', audioUrl: '/assets/mp3/vyanjan/द.mp3' },
+  { name: 'र', audioUrl: '/assets/mp3/vyanjan/र.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
   { name: 'म', audioUrl: '/assets/mp3/vyanjan/म.mp3' },
 ];
