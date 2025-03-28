@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import styles from '@/styles/Components/Container/AaMatra.module.scss';
+import { handlePlayAllAudio,handlePlayAudio } from '@/utils/audioUtils';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
@@ -73,12 +74,6 @@ function Index() {
   const [selectedValue, setSeletedValue] = useState<string>('');
   const BaloonImg = '/assets/images/yellow_baloon.png';
 
-  const handlePlayAudio = (audioUrl: string, name: string) => {
-    setSeletedValue(name);
-    const audio = new Audio(audioUrl);
-    audio.play();
-  };
-
   return (
     <>
       <div className={styles.LearningPage}>
@@ -126,7 +121,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Morning</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(MorningMap, Morning1Map)} />
                     </div>
                   </div>
                 ))}
@@ -155,7 +150,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Namah</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(NamahMap, Namah2Map)} />
                     </div>
                   </div>
                 ))}
@@ -184,7 +179,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Atah</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(AtahMap, Atah1Map)} />
                     </div>
                   </div>
                 ))}
@@ -213,7 +208,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Eventually</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(EventuallyMap, Eventually1Map)} />
                     </div>
                   </div>
                 ))}
@@ -242,7 +237,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Shaneh</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(ShanehMap, Shaneh1Map)} />
                     </div>
                   </div>
                 ))}
@@ -271,7 +266,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Often</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(OftenMap, Often1Map)} />
                     </div>
                   </div>
                 ))}
@@ -300,7 +295,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Again</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(AgainMap, Again1Map)} />
                     </div>
                   </div>
                 ))}
@@ -329,7 +324,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Automatically</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(AutomaticallyMap, Automatically1Map)} />
                     </div>
                   </div>
                 ))}

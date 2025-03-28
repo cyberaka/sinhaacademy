@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import styles from '@/styles/Components/Container/AaMatra.module.scss';
+import { handlePlayAllAudio,handlePlayAudio } from '@/utils/audioUtils';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
@@ -151,11 +152,6 @@ function Index() {
   const [selectedValue, setSeletedValue] = useState<string>('');
   const BaloonImg = '/assets/images/yellow_baloon.png';
 
-  const handlePlayAudio = (audioUrl: string, name: string) => {
-    setSeletedValue(name);
-    const audio = new Audio(audioUrl);
-    audio.play();
-  };
 
   return (
     <>
@@ -204,7 +200,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Season</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(SeasonMap, Season1Map)} />
                     </div>
                   </div>
                 ))}
@@ -233,7 +229,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Straw</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(StrawMap, Straw1Map)} />
                     </div>
                   </div>
                 ))}
@@ -262,7 +258,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Home</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(HomeMap, Home1Map)} />
                     </div>
                   </div>
                 ))}
@@ -291,7 +287,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Creation</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(CreationMap, Creation1Map)} />
                     </div>
                   </div>
                 ))}
@@ -320,7 +316,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Ghee</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(GheeMap, Ghee1Map)} />
                     </div>
                   </div>
                 ))}

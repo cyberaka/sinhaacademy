@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import styles from '@/styles/Components/Container/AaMatra.module.scss';
+import { handlePlayAllAudio,handlePlayAudio } from '@/utils/audioUtils';
 
 const RightBall = '/assets/images/right_ball_boy.png';
 const centerGirl = '/assets/images/center_girl.png';
@@ -146,12 +147,6 @@ function Index() {
   const [selectedValue, setSeletedValue] = useState<string>('');
   const BaloonImg = '/assets/images/yellow_baloon.png';
 
-  const handlePlayAudio = (audioUrl: string, name: string) => {
-    setSeletedValue(name);
-    const audio = new Audio(audioUrl);
-    audio.play();
-  };
-
   return (
     <>
       <div className={styles.LearningPage}>
@@ -199,7 +194,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Warrior</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(WarriorMap, Warrior1Map)} />
                     </div>
                   </div>
                 ))}
@@ -228,7 +223,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Trident</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(TridentMap, Trident2Map)} />
                     </div>
                   </div>
                 ))}
@@ -257,7 +252,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Ring</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(RingMap, Ring1Map)} />
                     </div>
                   </div>
                 ))}
@@ -286,7 +281,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Labourer</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(LabourerMap, Labourer1Map)} />
                     </div>
                   </div>
                 ))}
@@ -315,7 +310,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Letter</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(LetterMap, Letter1Map)} />
                     </div>
                   </div>
                 ))}
@@ -344,7 +339,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Student</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(StudentMap, Student1Map)} />
                     </div>
                   </div>
                 ))}
@@ -373,7 +368,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Gyan</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(GyanMap, Gyan1Map)} />
                     </div>
                   </div>
                 ))}
@@ -402,7 +397,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Tree</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(TreeMap, Tree1Map)} />
                     </div>
                   </div>
                 ))}
@@ -431,7 +426,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Vegetable</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(VegetableMap, Vegetable1Map)} />
                     </div>
                   </div>
                 ))}
@@ -460,7 +455,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Biscuit</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(BiscuitMap, Biscuit1Map)} />
                     </div>
                   </div>
                 ))}
@@ -489,7 +484,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Book</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(BookMap, Book1Map)} />
                     </div>
                   </div>
                 ))}
@@ -518,7 +513,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Teacher</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(TeacherMap, Teacher1Map)} />
                     </div>
                   </div>
                 ))}
@@ -547,7 +542,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Bunch</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(BunchMap, Bunch1Map)} />
                     </div>
                   </div>
                 ))}
@@ -576,7 +571,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Fly</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(FlyMap, Fly1Map)} />
                     </div>
                   </div>
                 ))}
@@ -605,7 +600,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Onion</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(OnionMap, Onion1Map)} />
                     </div>
                   </div>
                 ))}
@@ -634,7 +629,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Milkman</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(MilkmanMap, Milkman1Map)} />
                     </div>
                   </div>
                 ))}
@@ -663,7 +658,7 @@ function Index() {
                     </h6>
                     <div className={styles.englishName}>Letter</div>
                     <div className={styles.PlayWrap}>
-                      <img src={PlayIcon} alt="Play" />
+                      <img src={PlayIcon} alt="Play" onClick={() => handlePlayAllAudio(Letter2Map, Letter21Map)} />
                     </div>
                   </div>
                 ))}

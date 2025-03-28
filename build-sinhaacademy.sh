@@ -4,4 +4,4 @@
 docker buildx use sinhaacademy-builder || docker buildx create --name sinhaacademy-builder --use
 
 # Build and push the image with multiple tags
-docker buildx build --platform linux/amd64 -t cyberaka/sinhaacademy:20250303v1 . --push
+docker buildx build --platform linux/amd64 -t cyberaka/sinhaacademy:20250324v1 . --push
