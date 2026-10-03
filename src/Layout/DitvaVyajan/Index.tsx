@@ -70,7 +70,7 @@ const MaizeMap = [
 const Maize1Map = [{ name: 'मक्का', audioUrl: '/assets/mp3/words/मक्का.mp3' }];
 const SourMap = [
   { name: 'ख', audioUrl: '/assets/mp3/vyanjan/ख.mp3' },
-  { name: 'ट्', audioUrl: '/assets/mp3/matraein/ट्.mp3' },
+  { name: 'ट्', audioUrl: '/assets/mp3/extra/ट्.mp3' },
   { name: 'ट', audioUrl: '/assets/mp3/vyanjan/ट.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];

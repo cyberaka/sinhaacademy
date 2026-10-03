@@ -28,13 +28,13 @@ const NamahMap = [
 ];
 const Namah2Map = [{ name: 'नमः', audioUrl: '/assets/mp3/words/नमः.mp3' }];
 const AtahMap = [
-  { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
+  { name: 'अ', audioUrl: '/assets/mp3/swara/अ.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
   { name: 'ः', audioUrl: '/assets/mp3/matraein/ः.mp3' },
 ];
 const Atah1Map = [{ name: 'अतः', audioUrl: '/assets/mp3/words/अतः.mp3' }];
 const EventuallyMap = [
-  { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
+  { name: 'अ', audioUrl: '/assets/mp3/swara/अ.mp3' },
   { name: 'ं', audioUrl: '/assets/mp3/matraein/ं.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },
   { name: 'त', audioUrl: '/assets/mp3/vyanjan/त.mp3' },

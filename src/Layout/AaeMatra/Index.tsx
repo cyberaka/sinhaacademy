@@ -29,14 +29,14 @@ const Peacock1Map = [{ name: 'मोर', audioUrl: '/assets/mp3/words/मोर
 const HorseMap = [
   { name: 'घ', audioUrl: '/assets/mp3/vyanjan/घ.mp3' },
   { name: 'ो', audioUrl: '/assets/mp3/matraein/ो.mp3' },
-  { name: 'ड़', audioUrl: '/assets/mp3/vayanjan/ड़.mp3' },
+  { name: 'ड़', audioUrl: '/assets/mp3/vyanjan/ड़.mp3' },
   { name: 'ा', audioUrl: '/assets/mp3/matraein/ा.mp3' },
 ];
 const Horse1Map = [{ name: 'घोड़ा', audioUrl: '/assets/mp3/words/घोड़ा.mp3' }];
 const CuckooMap = [
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
   { name: 'ो', audioUrl: '/assets/mp3/matraein/ो.mp3' },
-  { name: 'य', audioUrl: '/assets/mp3/vayanjan/य.mp3' },
+  { name: 'य', audioUrl: '/assets/mp3/vyanjan/य.mp3' },
   { name: 'ल', audioUrl: '/assets/mp3/vyanjan/ल.mp3' },
 ];
 const Cuckoo1Map = [{ name: 'कोयल', audioUrl: '/assets/mp3/words/कोयल.mp3' }];

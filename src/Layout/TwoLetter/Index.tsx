@@ -59,7 +59,7 @@ const JuiceMap = [
 ];
 const Juice1Map = [{ name: 'रस', audioUrl: '/assets/mp3/words/रस.mp3' }];
 const NowMap = [
-  { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
+  { name: 'अ', audioUrl: '/assets/mp3/swara/अ.mp3' },
   { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' },
 ];
 const Now1Map = [{ name: 'अब', audioUrl: '/assets/mp3/words/अब.mp3' }];

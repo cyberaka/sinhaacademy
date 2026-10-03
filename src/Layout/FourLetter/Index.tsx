@@ -21,7 +21,7 @@ const ThermosMap = [
 ];
 const Thermos1Map = [{ name: 'थरमस', audioUrl: '/assets/mp3/words/थरमस.mp3' }];
 const LongCoatMap = [
-  { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
+  { name: 'अ', audioUrl: '/assets/mp3/swara/अ.mp3' },
   { name: 'च', audioUrl: '/assets/mp3/vyanjan/च.mp3' },
   { name: 'क', audioUrl: '/assets/mp3/vyanjan/क.mp3' },
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
@@ -42,7 +42,7 @@ const TurnipMap = [
 ];
 const Turnip1Map = [{ name: 'शलगम', audioUrl: '/assets/mp3/words/शलगम.mp3' }];
 const RiftMap = [
-  { name: 'अ', audioUrl: '/assets/mp3/svar/अ.mp3' },
+  { name: 'अ', audioUrl: '/assets/mp3/swara/अ.mp3' },
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
   { name: 'ब', audioUrl: '/assets/mp3/vyanjan/ब.mp3' },
   { name: 'न', audioUrl: '/assets/mp3/vyanjan/न.mp3' },
