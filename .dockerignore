@@ -1,4 +1,12 @@
 node_modules
 .next
+.git
+.github
+deploy
 Dockerfile
 .dockerignore
+.env
+.env*
+bitbucket-pipelines.yml
+build-sinhaacademy.*
+*.code-workspace

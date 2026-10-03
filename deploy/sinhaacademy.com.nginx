@@ -1,0 +1,60 @@
+# sinhaacademy.com — host nginx site on quizwrap.com (reverse proxy to the container on 8520)
+#
+# Install: sudo cp sinhaacademy.com.nginx /etc/nginx/sites-available/sinhaacademy.com
+#          sudo ln -s /etc/nginx/sites-available/sinhaacademy.com /etc/nginx/sites-enabled/sinhaacademy.com
+#          sudo nginx -t && sudo systemctl reload nginx
+#
+# Unlike the other vhosts on this host, the TLS lines are hand-written: they point at the
+# cert copied from the old ajitkids.com VPS, so HTTPS works the moment DNS flips.
+# That cert covers only the apex. After DNS moves, expand it to www with:
+#   sudo certbot --nginx --cert-name sinhaacademy.com --expand -d sinhaacademy.com -d www.sinhaacademy.com
+
+server {
+    server_name sinhaacademy.com www.sinhaacademy.com;
+
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css text/javascript application/javascript application/json image/svg+xml;
+
+    client_max_body_size 1M;
+
+    location / {
+        proxy_pass http://127.0.0.1:8520;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Port $server_port;
+        proxy_http_version 1.1;
+    }
+
+    listen [::]:443 ssl;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/sinhaacademy.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/sinhaacademy.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
+
+server {
+    if ($host = www.sinhaacademy.com) {
+        return 301 https://$host$request_uri;
+    }
+
+    if ($host = sinhaacademy.com) {
+        return 301 https://$host$request_uri;
+    }
+
+    listen 80;
+    listen [::]:80;
+    server_name sinhaacademy.com www.sinhaacademy.com;
+    return 404;
+}

@@ -1,0 +1,28 @@
+# sinhaacademy.com production stack on the shared quizwrap.com server (~/sinhaacademy).
+#
+# Deployed by .github/workflows/deploy-production.yml, which copies this file to the server
+# and exports DOCKER_USERNAME / IMAGE_TAG (`prod`, or `prod-<sha>` for a rollback).
+# `npm run start` runs `next start -p 2000`, so the app listens on 2000.
+# Host nginx proxies sinhaacademy.com -> 127.0.0.1:8520 (see deploy/sinhaacademy.com.nginx).
+# No runtime env: lessons and mp3s are baked into the image.
+#
+# Never `docker compose down` on quizwrap; use `up -d` to replace the container.
+name: sinhaacademy
+
+services:
+  web:
+    image: ${DOCKER_USERNAME:-cyberaka}/sinhaacademy:${IMAGE_TAG:-prod}
+    container_name: sinhaacademy-web
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      # Loopback only: nginx proxies via 127.0.0.1; the origin must never answer
+      # direct traffic on 0.0.0.0 (same rule as the other stacks on this host).
+      - "127.0.0.1:8520:2000"
+    healthcheck:
+      # 127.0.0.1, not localhost. node:18 (Debian) ships wget.
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:2000/"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s

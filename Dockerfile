@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy the package files and install dependencies
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 
 # Copy the rest of the project files
 COPY . .
@@ -29,7 +29,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
 
 # Expose the port Next.js runs on
-EXPOSE 3000
+EXPOSE 2000
 
 # Start the Next.js server
 CMD ["npm", "run", "start"]
